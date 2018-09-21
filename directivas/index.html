@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="miAppDirectivas">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script src="controller.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body ng-controller="DirectivasController">
+
+    <h3>repositorios</h3>
+    <ul>
+        <li ng-repeat="repo in repos" ng-cloak>
+          <div class="circular" back-img="{{repo.owner.avatar_url}}"></div>
+          <!-- <div class="circular" style="background:url({{repo.owner.avatar_url}}); background-position: center; background-size: cover;"></div> -->
+          <!-- <img width="150" height="150" ng-src="{{repo.owner.avatar_url}}" alt=""> -->
+          <h4>{{repo.name}}</h4>            
+        </li>
+    </ul>
+  </body>
+</html>

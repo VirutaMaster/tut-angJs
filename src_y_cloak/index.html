@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="miApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script src="controller.js"></script>
+  </head>
+  <body ng-controller="AppController">
+
+    <h3>repositorios</h3>
+    <ul>
+        <li ng-repeat="repo in repos" ng-cloak>
+          <img width="150" height="150" ng-src="{{repo.owner.avatar_url}}" alt="">
+          <h4>{{repo.name}}</h4>            
+        </li>
+    </ul>
+  </body>
+</html>

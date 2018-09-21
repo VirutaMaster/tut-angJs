@@ -1,0 +1,16 @@
+{
+  "name": "ramapp",
+  "version": "0.0.1",
+  "description": "tutorial de codigofacilito de angular js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rama",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.2",
+    "angular-local-storage": "^0.7.1",
+    "angular-route": "^1.7.4"
+  }
+}
