@@ -1,0 +1,5 @@
+$base:#1dbc17;
+$lighter1: lighten(adjust-hue($base, 5), 10%);
+$lighter2: lighten(adjust-hue($base, 10), 20%);
+$darker1: darken(adjust-hue($base, -5), 10%);
+$darker2: darken(adjust-hue($base, -10), 20%);
